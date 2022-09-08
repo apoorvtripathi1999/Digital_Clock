@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIgital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(56, 56, 56);" id="root">
+    <script src="watch.js"></script>
+    <div class="flex_container">
+        <div  id ="time_thread" class="main_thread">
+            <div class="time" style="background-color: red;">
+            <span id="h"></span>
+            </div>
+            <div class="time" style="background-color: green;">
+                <span id="m"></span>
+            </div>
+            <div class="time" style="background-color: yellow;">
+                <span id="s"></span>
+            </div>
+        </div>
+    
+        <div id ="date_thread" class="main_thread">
+            <div class="date">
+                <span id="d"></span>
+            </div> 
+            <div class="date">
+                <span id="da"></span>
+            </div> 
+            <div class="date">
+                <span id="ampm"></span>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>
