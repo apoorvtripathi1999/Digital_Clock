@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="background-color: rgb(56, 56, 56);" id="root">
-    <script src="watch.js"></script>
-    <div class="flex_container">
+        <div class="flex_container">
         <div  id ="time_thread" class="main_thread">
-            <div class="time" style="background-color: red;">
+            <div class="time">
             <span id="h"></span>
             </div>
-            <div class="time" style="background-color: green;">
+            <div class="time">
                 <span id="m"></span>
             </div>
-            <div class="time" style="background-color: yellow;">
+            <div class="time">
                 <span id="s"></span>
             </div>
+            <!-- <div id ="date_thread" class="main_thread">
+                <div class="date">
+                    <span id="d"></span>
+                </div> 
+                <div class="date">
+                    <span id="da"></span>
+                </div> 
+                <div class="date">
+                    <span id="ampm"></span>
+                </div> 
+            </div> -->
         </div>
     
         <div id ="date_thread" class="main_thread">
@@ -34,5 +44,6 @@
             </div> 
         </div>
     </div>
+    <script src="watch.js"></script>
 </body>
 </html>

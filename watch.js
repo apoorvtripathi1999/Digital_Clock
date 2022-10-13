@@ -1,9 +1,9 @@
 var hours = document.getElementById('h');
 var minutes = document.getElementById('m');
 var seconds = document.getElementById('s');
-var day = document.getElementById('d');
-var date = document.getElementById('da');
-var duration = document.getElementById('ampm');
+var day = document.getElementById('da');
+var date = document.getElementById('d');
+var dura = document.getElementById('ampm');
 
 function reload() {
     var cont = new Date();
@@ -12,6 +12,8 @@ function reload() {
     var mm = cont.getMinutes();
     var ss = cont.getSeconds();
     var dd = cont.getUTCDate();
+    var day_local = cont.getDay();
+    var duration;
     
     if(hh==00){
      hh = 12;
@@ -28,10 +30,9 @@ function reload() {
     hours.textContent = hh; 
     minutes.textContent = mm;
     seconds.textContent = ss;
-    day.textContent = getday(dd);
-    date.textContent = cont;
-    duration.textContent = duration;
-
+    date.textContent = dd;
+    dura.textContent = duration;
+    day.textContent = getday(day_local);
 }
 
 function getday(value){
@@ -44,9 +45,8 @@ function getday(value){
         'Thursday',
         'Friday',
         'Saturday'
-    ]
-    
-    return[value];
+    ];
+    return dayNames[value]
 }
 
 setInterval(reload,1000);

@@ -5,20 +5,26 @@
     margin-top: 10px;
     width: 400px;
     height: 50px;
-    border-radius: 2%;
+    border-radius: 10px;
     border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 5px 5px 5px yellow;
+    margin-top: 50px;
 }
 #time_thread{
-    border-radius: 2%;
+    border-radius: 10px;
     border: 1px solid yellow;
+    padding: 10px;
+    box-shadow: 5px 5px 5px yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    color: #fff;
+    margin-top: 200px;
     
 }
 .flex_container{
@@ -33,10 +39,36 @@
     width: 30%;
     height: 60%;
     border-radius: 2px;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.666);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
+
 }
 .date{
-    background-color: yellow;
     width: 30%;
     height: 40%;
     border-radius: 2px;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+
 }
