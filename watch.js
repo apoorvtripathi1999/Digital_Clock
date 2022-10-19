@@ -26,6 +26,10 @@ function reload() {
      hh = hh-12;
      duration = 'PM';
     }
+    if(hh<12)
+    {
+     duration = 'AM';
+    }
 
     hours.textContent = hh; 
     minutes.textContent = mm;
